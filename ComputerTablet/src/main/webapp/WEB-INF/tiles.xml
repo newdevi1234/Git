@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions> 
+  <definition name="page" template="/WEB-INF/views/template/Template.jsp"> 
+    <put-attribute name="title" value="Page" /> 
+    <put-attribute name="header" value="/WEB-INF/views/page/Header.jsp" /> 
+    <put-attribute name="menu" value="/WEB-INF/views/page/Menu.jsp" />
+    <put-attribute name="left" value="/WEB-INF/views/page/Left.jsp" />
+    <put-attribute name="right" value="/WEB-INF/views/page/Right.jsp" /> 
+    <put-attribute name="footer" value="/WEB-INF/views/page/Footer.jsp" /> 
+  </definition> 
+  
+  <definition name="home" extends="page"> 
+    <put-attribute name="title" value="Home" /> 
+    <put-attribute name="center" value="/WEB-INF/views/page/Home.jsp"/> 
+  </definition> 
+  
+  <definition name="about" extends="page"> 
+    <put-attribute name="title" value="About" /> 
+    <put-attribute name="center" value="/WEB-INF/views/page/About.jsp"/> 
+  </definition>
+  
+   <definition name="login" extends="page"> 
+    <put-attribute name="title" value="Login" /> 
+    <put-attribute name="center" value="/WEB-INF/views/page/Login.jsp"/> 
+  </definition>
+  
+  
+  
+  
+</tiles-definitions>
